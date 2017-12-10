@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <link rel="stylesheet" type = "text/css" href="styles/styles.css">
+    </head>
+
+    <body>
+
+        <div id = "placeholder"><img src="1.jpg"></div>
+
+        <ul id="thumbs">
+
+            <li><a href="1.jpg"><img src="1.jpg"></a></li>
+            <li><a href="2.jpg"><img src="2.jpg"></a></li>
+            <li><a href="3.jpg"><img src="3.jpg"></a></li>
+            <li><a href="4.jpg"><img src="4.jpg"></a></li>
+
+        </ul>
+        
+        <script type="text/javascript" src="node_modules/systemjs/dist/system.js"></script>
+        <script type="text/javascript">
+
+            System.config({
+
+                meta: {
+                    format: "cjs"
+                }
+            })
+            SystemJS.import("js/app.js")
+        </script>
+    </body>
+</html>
