@@ -1,4 +1,4 @@
-define(["./sandbox"], function(sb) {
+var CORE = require("./sandbox.js");
 
     var id, el, list, convert;
 
@@ -44,10 +44,8 @@ define(["./sandbox"], function(sb) {
         el.classList.toggle("module-active");
     }
 
-    return {
-        id: id,
-        init: init,
-        addTemp: addTemp,
-        closeForm: closeForm
-    }
-})
+module.exports.id = id;
+module.exports.init = init;
+module.exports.addTemp = addTemp;
+module.exports.closeForm = closeForm;
+    

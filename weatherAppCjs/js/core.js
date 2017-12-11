@@ -1,36 +1,32 @@
-define([], function() {
+var modules = {};
 
-    "use strict";
+function addModule(module_id, mod) {
 
-    var modules = {};
+    modules[module_id] = mod;
+}
 
-    function addModule(module_id, mod) {
+function registerEvents(evt, module_id) {
 
-        modules[module_id] = mod;
-    }
+    var theMod = modules[module_id];
+    theMod.events = evt;
+}
 
-    function registerEvents(evt, module_id) {
+function triggerEvents(evt) {
 
-        var theMod = modules[module_id];
-        theMod.events = evt;
-    }
-
-    function triggerEvents(evt) {
-
-        var mod;
-        for (mod in modules) {
-            if (modules.hasOwnProperty(mod)) {
-                mod = modules[mod];
-                if (mod.events && mod.events[evt.type]) {
-                    mod.events[evt.type](evt.data);
-                }
+    var mod;
+    for (mod in modules) {
+        if (modules.hasOwnProperty(mod)) {
+            mod = modules[mod];
+            if (mod.events && mod.events[evt.type]) {
+                mod.events[evt.type](evt.data);
             }
         }
     }
+}
 
-    return {
-        addModule: addModule,
-        registerEvents: registerEvents,
-        triggerEvents: triggerEvents
-    }
-})
+return {
+    addModule: addModule,
+    registerEvents: registerEvents,
+    triggerEvents: triggerEvents
+}
+
