@@ -76,6 +76,9 @@ var tempForm = (function() {
         var tempDetails = {};
         tempDetails.temperature = temperature.value;
 
+        var fahren = (temperature.value * 1.8) + 32
+        tempDetails.fahrenheit = fahren;
+
         sb.notify({
             type: "converted",
             data: tempDetails
@@ -124,7 +127,7 @@ var tempView = (function() {
 
         temp = document.createElement("p");
 
-        tempNodeVal = document.createTextNode(degree.temp);
+        tempNodeVal = document.createTextNode(degree.fahrenheit);
 
         temp.appendChild(tempNodeVal);
 

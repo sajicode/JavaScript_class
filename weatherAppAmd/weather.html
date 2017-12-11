@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temperature</title>
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+</head>
+
+<body>
+
+    <form id="convert" class="module-active">
+        <label for="convert" class="header">Convert Temperature to Fahrenheit</label>
+        <input type="text" class="temp" name="temperature" placeholder="Temperature in celsius">
+        <input type="submit" value="Convert" class="submit">
+    </form>
+    <div id="converted">
+        <div class="newTemp">Convert to Fahrenheit</div>
+        <ul id="tempList">
+        </ul>
+    </div>
+    
+    <script data-main="js/app.js" type="text/javascript" src="js/require.js"></script>
+
+</body>
+
+</html>

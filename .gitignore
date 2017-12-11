@@ -3,3 +3,6 @@
 /contactAppCjs/package-lock.json
 /gallery/node_modules
 /gallery/package-lock.json
+/weatherAppAmd/node_modules
+/weatherAppCjs/package-lock.json
+
