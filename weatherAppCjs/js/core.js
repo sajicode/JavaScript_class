@@ -24,9 +24,7 @@ function triggerEvents(evt) {
     }
 }
 
-return {
-    addModule: addModule,
-    registerEvents: registerEvents,
-    triggerEvents: triggerEvents
-}
+module.exports.addModule = addModule;
+module.exports.registerEvents = registerEvents;
+module.exports.triggerEvents = triggerEvents;
 

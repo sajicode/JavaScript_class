@@ -1,48 +1,48 @@
-var CORE = require("./sandbox.js");
+var sb = require("./sandbox.js");
 
-    var id, el, list, convert;
+var id, el, list, convert;
 
-    id = "converted";
+id = "converted";
 
-    function init() {
+function init() {
 
-        el = document.getElementById("converted");
-        list = document.getElementById("tempList");
-        convert = el.getElementsByClassName("newTemp")[0];
+    el = document.getElementById("converted");
+    list = document.getElementById("tempList");
+    convert = el.getElementsByClassName("newTemp")[0];
 
-        sb.listen({ "converted": addTemp }, id);
+    sb.listen({ "converted": addTemp }, id);
 
-        $on(convert, "click", closeForm);
+    $on(convert, "click", closeForm);
 
-    }
+}
 
-    function addTemp(degree) {
+function addTemp(degree) {
 
-        var li, temp, tempNodeVal;
+    var li, temp, tempNodeVal;
 
-        li = document.createElement("li");
+    li = document.createElement("li");
 
-        temp = document.createElement("p");
+    temp = document.createElement("p");
 
-        tempNodeVal = document.createTextNode(degree.fahrenheit);
+    tempNodeVal = document.createTextNode(degree.fahrenheit);
 
-        temp.appendChild(tempNodeVal);
+    temp.appendChild(tempNodeVal);
 
-        li.appendChild(temp);
+    li.appendChild(temp);
 
-        list.appendChild(li);
+    list.appendChild(li);
 
-        el.classList.toggle("module-active");
-    }
+    el.classList.toggle("module-active");
+}
 
-    function closeForm(e) {
+function closeForm(e) {
 
-        sb.notify({
-            type: "showUp",
-            data: null
-        });
-        el.classList.toggle("module-active");
-    }
+    sb.notify({
+        type: "showUp",
+        data: null
+    });
+    el.classList.toggle("module-active");
+}
 
 module.exports.id = id;
 module.exports.init = init;
