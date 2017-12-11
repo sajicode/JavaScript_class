@@ -19,7 +19,17 @@
         </ul>
     </div>
 
-    <script type="text/javascript" src="weather.js"></script>
+<script type="text/javascript" src="node_modules/systemjs/dist/system.js"></script>
+<script type="text/javascript">
+    System.config({
+
+        meta: {
+            format: "cjs"
+        }
+    })
+    SystemJS.import("js/app.js")
+</script>
+
 </body>
 
 </html>
