@@ -1,0 +1,207 @@
+/*Interactive page CSS
+I have been having trouble remocving the horizontal bar
+on the webpage, any help would be greatly appreciated */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#headerTwo {
+	height: 100px;
+	text-align: center;
+}
+
+#headerTwo p {
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+}
+
+#headerTwo img {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	left: 10px;
+	top: 5px;
+	
+}
+
+#sidebar {
+	height:1200px;
+}
+
+#sidebarItems {
+	width: 15%;
+	background-color: rgb(214,134,9);
+	height:100%;
+	position: relative;
+	float:left;
+	text-align: center;
+	
+}
+
+#sidebarItems li {
+	display: block;
+	font-family: 'Pacifico', cursive;
+	position: relative;
+	left: 10px;
+	top: 20px;
+	line-height:10em;
+}
+
+#editor {
+	float: right;
+	width: 85%;
+	height: 1200px;
+	position:relative;
+	left: 10px;
+	
+}
+
+#profileDetails {
+	height: 1200px;
+	background: url("aliens.jpg") no-repeat center center;
+	background-attachment: scroll;
+	background-size: cover;
+}
+
+#profileDetails li {
+	height: 100px;
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+	margin-top: 5px;
+	line-height: 2em;
+}
+
+input[type='text'], input[type='password'] {
+	width: 50%;
+	height: 40px;
+	border: 1px solid black;
+	font-family: 'Pacifico', cursive;
+}
+
+
+input[type='text']:focus, input[type='password']:focus {
+  border: 1px solid #fff;
+  background-color: #fff;
+  outline: none;
+}
+
+
+#datepicker {
+	width: 100px;
+	height: 20px;
+}
+
+#sampleDetails {
+	height: 1200px;
+	background: url("wheel.jpg") no-repeat center center;
+	background-attachment: scroll;
+	background-size: cover;
+	line-height: 3em;
+	font-family: 'Pacifico', cursive;
+	font-size: 32px;
+}
+
+#postForm {
+	margin: auto;
+	position: relative;
+	top:100px;
+	left: 150px;
+	width: 700px;
+	height: 50px;
+}
+
+#postButton {
+	font-family: 'Pacifico', cursive;
+	font-weight: bold;
+	font-size: 20px;
+	width: 400px;
+	height: 100px;
+	opacity: 0.8;
+	margin-top: 20px;
+}
+
+#ideaDetails {
+	height: 1200px;
+	background: url("think.jpg") no-repeat center center;
+	background-attachment: scroll;
+	background-size: cover;
+	line-height: 3em;
+	font-family: 'Pacifico', cursive;
+	font-size: 32px;
+}
+
+#ideaForm p{
+	text-align: center;
+}
+
+textarea {
+  width: 96%;
+  height: 30em;
+  line-height: 1.4em;
+  margin: auto;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+#footerPage2 {
+	height: 100px;
+	width: 100%;
+	position: relative;
+	top:5px;
+	text-align: center;
+	background-color: #000;
+	color: #D68609;
+}
+
+#footerPage2 p {
+	font-size: 40px;
+	font-family: 'Amatic SC', cursive;
+}
+
+#seuss {
+	position: relative;
+	left: 800px;
+}
+
+.btn-edit {
+	font-family: 'Pacifico', cursive;
+	margin-left: 10px;
+}
+
+#home-btn {
+	float: left;
+}
+
+@media only screen and (max-width: 480px) {
+	#footerPage2 {
+		width: 1000px;
+	}
+	
+	#sidebarItems {
+		width: 25%;
+	}
+	
+	#editor {
+		width: 75%;
+	}
+	
+	
+}
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+

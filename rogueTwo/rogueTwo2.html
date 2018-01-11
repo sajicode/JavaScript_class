@@ -1,0 +1,106 @@
+<!--rogueTwo Page 2-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rogue 2.0 Interactive page</title>
+		<link href = "css/rogueTwo2.css" type = "text/css" rel = "stylesheet">
+		<link href = "css/datepicker.css" type = "text/css" rel = "stylesheet">
+		<link 
+			href="https://fonts.googleapis.com/css?family=Amatic+SC|BenchNine|Fira+Sans|Inconsolata|Indie+Flower|Lobster+Two|Pacifico|Quicksand|Roboto|Zilla+Slab+Highlight"
+			rel="stylesheet">
+	</head>
+	<body>
+		<div id = "headerTwo">
+			<a href = "rogueTwo.html"><img src = "images/home.png" alt = "home button" id = "home-btn"/></a>
+			<p>Let's get to know each other<span><img src = "images/ninja.png" alt = "ninja icon"/></span></p>
+		</div>
+		<div id = "sidebar">
+			<ul id = "sidebarItems">
+				<li id = "profile">Profile</li>
+				<li id = "sample">Sample</li>
+				<li id = "ideas">Ideas?</li>
+				<li id = "blog">Blog</li>
+			</ul>
+			<div id = "editor">
+				<ul id = "profileDetails" class = "editorDetails">
+				
+					<li id = "nameInput">Name:</li>
+						<div id="nameButton"><button href="#" id="showName" class = "btn-edit">Enter Name</button></div>
+						<form id="nameForm">
+							<input type="text" id="nameDetails" placeholder="Input your name..." />
+							<input type="submit" id="addName" value="Add Name"/>
+						</form>
+					
+					<li id = "nicknameInput">Nickname:</li>
+						<div id="nicknameButton"><button href="#" id="showNickname" class = "btn-edit">Enter Nickname</button></div>
+						<form id="nicknameForm">
+							<input type="text" id="nicknameDetails" placeholder="Input your Nickname..." />
+							<input type="submit" id="addNickname" value="Add Nickname"/>
+						</form>
+					
+					<li id = "dobInput">D.O.B:</li>
+						<form id = "dobForm">
+							<input type = "text" id = "datepicker"/>
+							<input type = "submit" id = "addDob" class = "btn-edit" value = "Add D.O.B"/>
+						</form>
+					
+					<li id = "genderInput">
+						<form id="genderForm">
+							<p>Gender:<Br/>
+							<input type="radio"  name = "gender" value = "male" class="genderDetails btn-edit""/>Male
+							<input type="radio"  name = "gender" value = "female" class="genderDetails"/>Female</p>
+						</form></li>
+						
+					<li id = "langInput">Language(s):</li>
+						<div id="langButton"><button href="#" id="showLang" class = "btn-edit">Input Languages</button></div>
+						<form id="langForm">
+							<input type="text" id="langDetails" placeholder="Input Languages you work with..." />
+							<input type="submit" id="addLang" value="Add Language"/>
+						</form>
+						
+					<li id = "gitInput">GIT Username:</li>
+					<div id="gitButton"><button href="#" id="showGit" class = "btn-edit">Enter Git Username</button></div>
+					<form id="gitForm">
+						<input type="text" id="gitDetails" placeholder="Input your GIT Username..." />
+						<input type="submit" id="addGit" value="Add Git"/>
+					</form>
+					
+					<li id = "linkInput">LinkedIn Username:</li>
+					<div id="linkButton"><button href="#" id="showLink" class = "btn-edit">Enter LinkedIn Username</button></div>
+					<form id="linkForm">
+						<input type="text" id="linkDetails" placeholder="Input your LinkedIn Username..." />
+						<input type="submit" id="addLink" value="Add LinkedIn"/>
+					</form>
+					<form action = "rogueTwo.html" id = "postForm">
+						<button id = "postButton">Kindly Post Your Details to Lord Vader</button>
+					</form>
+				</ul>
+				<ul id = "sampleDetails" class = "editorDetails">
+					<form action = "#" id = "sampleForm">
+						<p>Feel free to upload a sample project</p>
+						<input type = "file" class = "btn-edit" name = "sample"/><br/>
+						<input type = "submit" class = "btn-edit" value = "Upload"/>
+					</form>
+				</ul>
+				<ul id = "ideaDetails" class = "editorDetails">
+					<form action = "#" id = "ideaForm">
+						<p>Think left and think right and think low and think high.<br/>
+						Oh, the thinks you can think up if only you try!<br/>
+															<div id = "seuss">.........Dr Seuss</div></p>
+						<textarea name = "ideas">Being Crazy Isn't Enough...</textarea>
+						<input type = "submit" class = "btn-edit" value = "Submit"/>
+					</form>
+				</ul>
+				<ul id = "blogDetails">
+				
+				</ul>
+			</div>
+		</div>
+		<div id = "footerPage2">
+			<p>Rogue &trade;</p>
+		</div>
+		<script src="js/jquery-3.1.0.js"></script>
+		<script src = "js/jquery-ui-1.12.1.js"></script>
+		<script src = "js/rogueTwo.js"></script>
+	</body>
+</html>

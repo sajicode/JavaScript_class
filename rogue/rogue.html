@@ -1,0 +1,85 @@
+<!--A sample project on web development-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Definition of Rogue</title>
+		<link href = "css/rogue.css" type = "text/css" rel = "stylesheet"/>
+	</head>
+	<body>
+		<div class = "headeritems">
+			<ul class = "nav">
+				<li id = "info"><a href ="#" id = "infolink">about</a></li>
+				<li>team</li>
+				<li>achievements</li>
+				<li>Join
+					<form action = "#" id = "joinform">
+						<select name = "social" id = 'media'>
+							<option value = "twitter" id = "tweet">Twitter</option>
+							<option value = "instagram" id = "insta">Instagram</option>
+							<option value = "facebook" id = "facebuk">Facebook</option>
+						</select>
+						<div id = "connecthint" class ="connecttip"></div>
+					</form>
+				</li>
+			</ul>
+		</div>
+		
+		<div class = "imgslider">
+			<button id = "prev">Prev</button>
+				<img src= "js/dr_seuss.jpg" class = "imgedit" id = "slider"/>
+			<button id = "nxt">Next</button>
+		</div>
+		
+		<div id = "mainpage">
+			<p class = "rogueitem">ROGUE</p>
+			<p class = "connectitem"><a  id = "itemconnect" href = "#">CONNECT</a></p>
+			<div id = "connecthint2" class ="connecttip"></div>
+			
+			<!--<audio src = "audio/coldplay_miracles.mp3" controls loop id = "music">
+				<p>This browser does not support our video format.</p>
+			</audio>-->
+
+				<div class = "firstfoot">
+					<div class = "footcol">
+						<h2>Crazy</h2>
+						<p>Take a peek at some of our best work</p>
+						<a class = "btn-dft" href = "#">Go Further</a>
+					</div>
+			
+					<div class = "footcol">
+						<h2 class = "colpart">Art</h2>
+						<p>Giving Da Vinci a run for his money</p>
+						<a class = "btn-dft" href = "#">Go Further</a>
+					</div>
+			
+					<div class = "footcol">
+						<h2>Explore</h2>
+						<p>The Universe like you've never seen it</p>
+						<a class = "btn-dft" href = "#">Go Further</a>
+					</div>
+			
+					<div class = "footcol">
+						<h2>Curious?</h2>
+						<p>Dare to click</p>
+						<a class = "btn-dft" href = "#">Go Further</a>
+					</div>
+				</div>
+		</div>
+		<div id = "commentfoot">
+			<form action = "#" id = "formedit">
+				<p>Feel free to leave a message. Criticisms are totally welcome.</p>
+				<textarea name = "comments" cols = "50" rows = "5">Scribble away....</textarea>
+				<input type = "submit" name = "submit" value = "Post" id = "submit-btn"/>
+			</form>
+		</div>
+		
+		<div id = "footer">
+			<p>&copy; Rogue 2017</p>
+			<div id = "time"></div>
+		</div>
+		
+
+		<script src = "js/rogue.js"></script>
+		
+	</body>
+</html>
